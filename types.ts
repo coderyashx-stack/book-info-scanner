@@ -14,3 +14,25 @@ export interface Book {
   isbn: string;
   status: 'available' | 'checked_out';
 }
+
+// --- Types for Google Books API Fallback ---
+
+export interface GoogleBooksVolumeInfo {
+  title: string;
+  authors: string[];
+  publisher?: string;
+  publishedDate?: string;
+  description?: string;
+  industryIdentifiers?: { type: string; identifier: string }[];
+  pageCount?: number;
+  categories?: string[];
+  imageLinks?: {
+    smallThumbnail?: string;
+    thumbnail?: string;
+  };
+}
+
+export interface GoogleBookItem {
+  id: string;
+  volumeInfo: GoogleBooksVolumeInfo;
+}
