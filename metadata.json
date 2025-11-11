@@ -1,0 +1,7 @@
+{
+  "name": "Library Book Scanner",
+  "description": "A web application for library management that scans book barcodes or QR codes to fetch and display detailed book information. Users can manage a local library collection.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
